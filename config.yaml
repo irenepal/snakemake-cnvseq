@@ -25,7 +25,7 @@ options:
 ################################################################################
 
 references:
-    bwa_index: /path/to/index
+    bwa_index: input/genome/Homo_sapiens.GRCh38.dna.primary_assembly.fa
     gtf: input/reference.gtf
     qdnaseq:
         genome: mm10
@@ -33,13 +33,13 @@ references:
         blacklists: ["input/custom.bed"]
     rubic:
         # Biomart host/dataset to use for gene definitions.
-        biomart_host: "http://aug2014.archive.ensembl.org"
-        biomart_dataset: mmusculus_gene_ensembl
+        biomart_host: "http://www.ensembl.org/"
+        biomart_dataset: hsapiens_gene_ensembl
 
         # Chromosomes to include in the analysis.
         chromosomes: [
             "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11",
-            "12", "13", "14", "15", "16", "17", "18", "19", "X"]
+            "12", "13", "14", "15", "16", "17", "18", "19","20","21","22","X"]
 
         # Chromosome mapping (to map chromosomes from the input to
         # match with the chromosome notation used in the biomart dataset).
@@ -52,7 +52,7 @@ references:
         # Chromosomes/mapping (same as for RUBIC).
         chromosomes: [
             "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11",
-            "12", "13", "14", "15", "16", "17", "18", "19", "X"]
+            "12", "13", "14", "15", "16", "17", "18", "19","20","21","22", "X"]
         chromosome_map: ~
 
 
