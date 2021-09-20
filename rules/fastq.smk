@@ -15,13 +15,8 @@ rule cutadapt:
         fastq=temp("fastq/trimmed/{unit}.R1.fastq.gz"),
         qc="qc/cutadapt/{unit}.txt"
     params:
-        cutadapt_extra
-    #threads:
-    #    config["rules"]["cutadapt"]["threads"]
-    conda:
-        path.join(workflow.basedir, "envs", "cutadapt.yaml")
+        extra=cutadapt_extra
     log:
         "logs/cutadapt/{unit}.log"
     wrapper:
-        "0.17.0/bio/cutadapt/se"
-    #    "file://" + path.join(workflow.basedir, "wrappers", "cutadapt", "se")
+        "0.78.0/bio/cutadapt/se"

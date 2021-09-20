@@ -14,7 +14,7 @@ rule bwa_aln:
     threads:
         config["rules"]["bwa_aln"]["threads"]
     wrapper:
-        "0.17.0/bio/bwa/aln"
+        "0.78.0/bio/bwa/aln"
 
 
 def samse_extra(wildcards):
@@ -52,7 +52,7 @@ rule bwa_samse:
     log:
         "logs/bwa_samse/{unit}.log"
     wrapper:
-        "0.17.0/bio/bwa/samse"
+        "0.78.0/bio/bwa/samse"
 
 
 def merge_inputs(wildcards):
@@ -71,7 +71,7 @@ rule samtools_merge:
     threads:
         config["rules"]["samtools_merge"]["threads"]
     wrapper:
-        "0.17.0/bio/samtools/merge"
+        "0.78.0/bio/samtools/merge"
 
 
 rule picard_mark_duplicates:
@@ -85,7 +85,7 @@ rule picard_mark_duplicates:
     log:
         "logs/picard_mark_duplicates/{sample}.log"
     wrapper:
-        "0.17.0/bio/picard/markduplicates"
+        "0.78.0/bio/picard/markduplicates"
 
 
 rule samtools_index:
@@ -94,4 +94,4 @@ rule samtools_index:
     output:
         "bam/final/{sample}.bam.bai"
     wrapper:
-        "0.17.0/bio/samtools/index"
+        "0.78.0/bio/samtools/index"

@@ -16,7 +16,7 @@ rule multiqc:
     log:
         "logs/multiqc.log"
     wrapper:
-        "0.17.0/bio/multiqc"
+        "0.78.0/bio/multiqc"
 
 
 rule fastqc:
@@ -28,7 +28,7 @@ rule fastqc:
     params:
         " ".join(config["rules"]["fastqc"]["extra"])
     wrapper:
-        "0.17.0/bio/fastqc"
+        "0.78.0/bio/fastqc"
 
 
 rule samtools_stats:
@@ -37,4 +37,4 @@ rule samtools_stats:
     output:
         "qc/samtools_stats/{sample}.txt"
     wrapper:
-        "0.17.0/bio/samtools/stats"
+        "0.78.0/bio/samtools/stats"
