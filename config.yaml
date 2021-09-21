@@ -102,7 +102,7 @@ rules:
 
 input:
     # Input directory (unit paths are taken relative to this directory).
-    dir: input
+    dir: datos/HULP_*
 
 
 ################################################################################
