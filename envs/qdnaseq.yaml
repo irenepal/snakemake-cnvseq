@@ -3,5 +3,5 @@ channels:
   - conda-forge
 dependencies:
   - r-base ==3.3.2
-  - bioconductor-qdnaseq ==1.10.0
-  - bioconductor-qdnaseq.mm10 ==1.4.0
+  - bioconductor-qdnaseq ==1.28.0
+  
