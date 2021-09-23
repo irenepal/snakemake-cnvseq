@@ -114,12 +114,12 @@ input:
 # run or lane for a sample.
 
 samples:
-    S1: ["S1.L001"]
-    S2: ["S2.L001"]
+    S1: ["S1.HULP"]
+    S2: ["S2.HULP"]
 
 units:
-    S1.L001: ["*_1.fastq.gz"]
-    S2.L001: ["*_2.fastq.gz"]
+    S1.HULP: ["HULP_1004_FKDN210100496-1A_HWNKLDSXY_L4_1.fq.gz"]
+    S2.HULP: ["HULP_1009_FKDN210100497-1A_HWNKLDSXY_L4_1.fq.gz"]
 
 # Normals are used to correct for artefacts that remain after the
 # GC-content/mappability correction performed by QDNAseq.
