@@ -118,8 +118,8 @@ samples:
     S2: ["S2.L001"]
 
 units:
-    S1.L001: ["S1.L001.R1.fastq.gz"]
-    S2.L001: ["S2.L001.R1.fastq.gz"]
+    S1.L001: ["*_1.fastq.gz"]
+    S2.L001: ["*_2.fastq.gz"]
 
 # Normals are used to correct for artefacts that remain after the
 # GC-content/mappability correction performed by QDNAseq.
